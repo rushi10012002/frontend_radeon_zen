@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+
+}
+
+.container .first {
+    height: 80%;
+    background: url("http://localhost:3000/undraw_secure_login_pdn4.svg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+    animation: left;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    left: 0%;
+}
+
+
+
+.container .second {
+    height: 80%;
+    background-color: aliceblue;
+    width: 100%;
+    flex-basis: 50%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: top;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    top: 0%;
+}
+
+.h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.appNameSpan {
+    color: rgb(110, 196, 250);
+}
+
+@keyframes left {
+    from {
+        /* background-color: red; */
+        left: -100%;
+        opacity: 0;
+    }
+
+    to {
+        /* background-color: yellow; */
+        /* rotate: 180deg; */
+        left: 0%;
+        opacity: 1;
+    }
+
+}
+
+@keyframes top {
+    from {
+        /* background-color: red; */
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        /* background-color: yellow; */
+        /* rotate: 180deg; */
+        top: 0%;
+        opacity: 1;
+    }
+
+}
